@@ -478,6 +478,7 @@ textarea.cform-input{resize:vertical;min-height:110px;margin-bottom:12px}
 
 <!-- ═══ MOBILE MENU ═══ -->
 <div class="mob-menu" id="mobMenu">
+  <button id="mobMenuClose" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--dark)"><i class="fa-solid fa-xmark"></i></button>
   <a href="#services" data-en="Services" data-bm="Perkhidmatan">Services</a>
   <a href="#who-we-help" data-en="Who We Help" data-bm="Siapa Kami Bantu">Who We Help</a>
   <a href="#why-akar" data-en="Why Akar Data AI" data-bm="Kenapa Akar Data AI">Why Akar Data AI</a>
@@ -497,8 +498,8 @@ textarea.cform-input{resize:vertical;min-height:110px;margin-bottom:12px}
         <span class="ico"><i class="fa-solid fa-circle-check"></i></span>
         <span data-en="AI & Automation for Malaysian SMEs" data-bm="AI & Automasi untuk PKS Malaysia">AI & Automation for Malaysian SMEs</span>
       </div>
-      <h1 data-en="Build a <em>Smarter Business</em> with <em>Data and Automation.</em>" data-bm="Bina Perniagaan <em>Lebih Bijak</em> dengan <em>Data dan Automasi.</em>">Build a <em>Smarter Business</em> with <em>Data and Automation.</em></h1>
-      <p class="hero-p" data-en="We bring the tech that big companies use - right to your doorstep. Packaged for small businesses, priced for real life." data-bm="Kami bawa teknologi yang digunakan syarikat besar - terus ke pintu anda. Dikemas untuk perniagaan kecil, harga berpatutan.">We bring the tech that big companies use - right to your doorstep. Packaged for small businesses, priced for real life.</p>
+      <h1 data-en="Grow your business smarter through <em>Data</em> and <em>Automation</em>." data-bm="Kembangkan perniagaan anda dengan lebih bijak melalui <em>Data</em> dan <em>Automasi</em>.">Grow your business smarter through <em>Data</em> and <em>Automation.</em></h1>
+      <p class="hero-p" data-en="Data and automation strengthen the foundation of a business, enabling it to scale and sustain." data-bm="Data dan automasi mengukuhkan asas perniagaan, membolehkan perniagaan anda berkembang dan kekal stabil.">Data and automation strengthen the foundation of a business, enabling your business to scale and sustain.</p>
       <div class="hero-ctas">
         <a href="https://wa.me/60147078386?text=Hi%Akar Data AI!%20I'd%20like%20to%20learn%20more%20about%20your%20services." class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> <span data-en="WhatsApp Us" data-bm="WhatsApp Kami">WhatsApp Us</span></a>
         <a href="#services" class="btn btn-ghost" data-en="See Services" data-bm="Lihat Perkhidmatan">See Services</a>
@@ -563,19 +564,8 @@ textarea.cform-input{resize:vertical;min-height:110px;margin-bottom:12px}
     <div class="svc-grid">
       <div class="svc-card reveal" style="--d:0">
         <div class="num">01</div>
-        <div class="svc-icon"><i class="fa-solid fa-robot"></i></div>
-        <h3 data-en="AI Assistants & Chatbots" data-bm="Pembantu AI & Chatbot">AI Assistants & Chatbots</h3>
-        <p data-en="Smart bots that handle customer inquiries, take orders, and follow up - 24/7, in Bahasa or English." data-bm="Bot pintar yang menguruskan pertanyaan pelanggan, terima pesanan, dan buat susulan - 24/7, dalam Bahasa atau English.">Smart bots that handle customer inquiries, take orders, and follow up - 24/7, in Bahasa Melayu or English.</p>
-        <ul class="svc-list">
-          <li data-en="WhatsApp & website chatbots" data-bm="Chatbot WhatsApp & laman web">WhatsApp & website chatbots</li>
-          <li data-en="Auto-replies & smart routing" data-bm="Auto-balas & penghalaan pintar">Auto-replies & smart routing</li>
-          <li data-en="FAQ & order handling" data-bm="FAQ & pengurusan pesanan">FAQ & order handling</li>
-        </ul>
-      </div>
-      <div class="svc-card reveal" style="--d:1">
-        <div class="num">02</div>
         <div class="svc-icon"><i class="fa-solid fa-chart-line"></i></div>
-        <h3 data-en="Data & Business Intelligence" data-bm="Data & Kepintaran Perniagaan">Data & Business Intelligence</h3>
+        <h3 data-en="Data & Business Intelligence" data-bm="Data & Sistem Kepintaran Perniagaan">Data & Business Intelligence</h3>
         <p data-en="Turn your messy spreadsheets into clear dashboards and insights you can actually use to grow." data-bm="Tukar spreadsheet berselerak anda kepada 'dashboard' dan pandangan yang benar-benar berguna untuk berkembang.">Turn your messy spreadsheets into clear dashboards and insights you can actually use to grow.</p>
         <ul class="svc-list">
           <li data-en="Sales & inventory dashboards" data-bm="'Dashboard' jualan & inventori">Sales & inventory dashboards</li>
@@ -583,8 +573,8 @@ textarea.cform-input{resize:vertical;min-height:110px;margin-bottom:12px}
           <li data-en="Custom reports & KPIs" data-bm="Laporan & KPI Mengikut Keperluan">Custom reports & KPIs</li>
         </ul>
       </div>
-      <div class="svc-card reveal" style="--d:2">
-        <div class="num">03</div>
+      <div class="svc-card reveal" style="--d:1">
+        <div class="num">02</div>
         <div class="svc-icon"><i class="fa-solid fa-gears"></i></div>
         <h3 data-en="Workflow Automation" data-bm="Automasi Aliran Kerja">Workflow Automation</h3>
         <p data-en="Eliminate repetitive tasks. Auto-generate invoices, sync orders, send reminders - without lifting a finger." data-bm="Hapuskan tugasan berulang. Jana invois secara automatik, segerakkan pesanan, hantar peringatan - tanpa perlu bersusah payah.">Eliminate repetitive tasks. Auto-generate invoices, sync orders, send reminders - without lifting a finger.</p>
@@ -592,6 +582,17 @@ textarea.cform-input{resize:vertical;min-height:110px;margin-bottom:12px}
           <li data-en="Invoice & receipt automation" data-bm="Automasi invois & resit">Invoice & receipt automation</li>
           <li data-en="Order-to-delivery pipelines" data-bm="Saluran pesanan-ke-penghantaran">Order-to-delivery pipelines</li>
           <li data-en="Multi-platform sync" data-bm="Sinkronisasi pelbagai platform">Multi-platform sync</li>
+        </ul>
+      </div>
+      <div class="svc-card reveal" style="--d:2">
+        <div class="num">03</div>
+        <div class="svc-icon"><i class="fa-solid fa-robot"></i></div>
+        <h3 data-en="AI Assistants & Chatbots" data-bm="Pembantu AI & Chatbot">AI Assistants & Chatbots</h3>
+        <p data-en="Smart bots that handle customer inquiries, take orders, and follow up - 24/7, in Bahasa or English." data-bm="Bot pintar yang menguruskan pertanyaan pelanggan, terima pesanan, dan buat susulan - 24/7, dalam Bahasa atau English.">Smart bots that handle customer inquiries, take orders, and follow up - 24/7, in Bahasa Melayu or English.</p>
+        <ul class="svc-list">
+          <li data-en="WhatsApp & website chatbots" data-bm="Chatbot WhatsApp & laman web">WhatsApp & website chatbots</li>
+          <li data-en="Auto-replies & smart routing" data-bm="Auto-balas & penghalaan pintar">Auto-replies & smart routing</li>
+          <li data-en="FAQ & order handling" data-bm="FAQ & pengurusan pesanan">FAQ & order handling</li>
         </ul>
       </div>
     </div>
@@ -755,8 +756,10 @@ textarea.cform-input{resize:vertical;min-height:110px;margin-bottom:12px}
 
   /* Burger */
   const b=document.getElementById('burger'),m=document.getElementById('mobMenu');
+  const closeMenu=()=>{b.classList.remove('open');m.classList.remove('open');document.body.style.overflow=''};
   b.addEventListener('click',()=>{b.classList.toggle('open');m.classList.toggle('open');document.body.style.overflow=m.classList.contains('open')?'hidden':''});
-  m.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>{b.classList.remove('open');m.classList.remove('open');document.body.style.overflow=''}));
+  m.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>closeMenu()));
+  document.getElementById('mobMenuClose').addEventListener('click',()=>closeMenu());
 
   /* Language */
   function setLang(l){
